@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercise 4 - Forms</title>
+  </head>
+  <body>
+    <h2>Registration Form</h2>
+
+    <!-- POST FORM -->
+    <form method="POST" action="https://formspree.io/f/xpwzpzrd">
+      <label>First Name:</label><br />
+      <input type="text" name="first_name" required /><br /><br />
+
+      <label>Last Name:</label><br />
+      <input type="text" name="last_name" required /><br /><br />
+
+      <label>Gender:</label><br />
+      <input type="radio" name="gender" value="Male" required /> Male
+      <input type="radio" name="gender" value="Female" /> Female<br /><br />
+
+      <label>Date of Birth:</label><br />
+      <input type="date" name="date_of_birth" required /><br /><br />
+
+      <label>Email:</label><br />
+      <input type="email" name="email" required /><br /><br />
+
+      <input type="submit" value="Register" />
+    </form>
+
+    <hr />
+
+    <h2>Search Form</h2>
+
+    <!-- GET FORM -->
+    <form method="GET" action="https://httpbin.org/get">
+      <label>Search:</label><br />
+      <input type="text" name="search_name" required /><br /><br />
+
+      <input type="submit" value="Search" />
+    </form>
+  </body>
+</html>
